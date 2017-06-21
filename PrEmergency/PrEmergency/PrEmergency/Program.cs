@@ -11,10 +11,10 @@
 			new Function().FunctionHandler(new EventData
 				{
 					DryRun = true,
-					GitHubOrganizationName = "eightcard",
-					GitHubRepositoryName = "lk-linkknowledge",
+					GitHubOrganizationName = "",
+					GitHubRepositoryName = "",
 					GitHubOAuthToken = "",
-					TargetGitHubUserNameCsv = "kumaie,mtaniuchi,TakumaHarada,takashi-okumura,ynakagawa33,kenta-sugihara,tfukudan",
+					TargetGitHubUserNameCsv = "",
 					SlackWebhookUrl = ""
 				}, new DebugLambdaContext())
 				.Wait();
