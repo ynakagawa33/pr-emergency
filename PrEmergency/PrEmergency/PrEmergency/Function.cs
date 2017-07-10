@@ -103,7 +103,7 @@ namespace PrEmergency
 			var postMessage =
 				$@"{(eventData.DryRun ? "`@nux-dev`" : "<!subteam^S2WPQQU2F|nux-dev>")} PR が作成されてから、 7 日以上経過しています。可及的速やかに Close してください。"
 				+ Environment.NewLine
-				+ string.Join(Environment.NewLine, targetPullRequests.Select(pr => $@"*{pr.Title}* created by {pr.User.Login}"));
+				+ string.Join(Environment.NewLine, targetPullRequests.Select(pr => $@"*<{pr.HtmlUrl}|{pr.Title}>* created by {pr.User.Login}"));
 
 			if (targetPullRequests.Count == 0)
 				return postMessage;
